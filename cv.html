@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>CV PDF Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        #pdf-container {
+            width: 100%;
+            max-width: 800px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            z-index: 10;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+        .back-button i {
+            margin-right: 5px;
+        }
+
+        
+    </style>
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div id="pdf-container">
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back
+        </a>
+        <iframe 
+            src="https://drive.google.com/file/d/1PmMdKCHtyupevpkcVE6jkfjgz3s04RYh/preview" 
+            width="100%" 
+            height="600" 
+            allow="autoplay">
+        </iframe>
+    </div>
+</body>
+
+</html>
