@@ -1,244 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Major Telecommunication">
-    <meta name="author" content="Fakhriadi Rasyaad">
-
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
-
-    <!-- Webpage Title -->
-    <title>Fakhriadi Rasyaad</title>
-    
-    <!-- Styles -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates | Fakhriadi Rasyaad</title>
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="gambar/logo fakhri.png">
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
-    
+<body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="gambar/logo fakhri.png" alt="Fakhriadi Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Project.html" >Proyek</a></li>
+                <li><a href="Sertifikat.html"class="active">Sertifikat</a></li>
+                <li><a href="index.html#contact">Kontak</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="hero-content">
+            <span class="hero-tag">Achievements</span>
+            <h1>
+                Halaman <span class="gradient-text">Sertifikat</span> &<br>
+                <span class="gradient-text-alt">Prestasi</span>
+            </h1>
+            <p>
+                Koleksi sertifikat dari kompetisi, lokakarya, program pelatihan, dan kegiatan pengabdian masyarakat.
+            </p>
+        </div>
+    </section>
+
+    <!-- Certificates Gallery -->
+    <section>
         <div class="container">
-            
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="gambar/logo fakhri.png" alt="alternative"></a>  
+            <span class="section-tag">[ GALLERY ]</span>
+            <h2 class="section-title text-center">Certificate Collection</h2>
+            <p class="section-subtitle text-center" style="margin: 0 auto 4rem;">
+                Professional certifications and awards showcasing continuous learning and achievement.
+            </p>
+
+            <!-- Publications Section -->
+            <div class="certificate-category">
+                <h2 class="category-title">
+                    <span class="category-icon">📚</span>
+                    Publications
+                </h2>
+                <div class="certificate-grid">
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/HKI.png" alt="HKI Certificate">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/paper.jpg" alt="Paper Publication">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/icera.png" alt="ICERA Conference">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/Gen-City2025.png" alt="Paper Publication">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/Gen_City2025.png" alt="Paper Publication">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/ICCETEI2025.png" alt="Paper Publication">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/1.png" alt="Paper Publication">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/2.png" alt="Paper Publication">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
 
 
-            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="Project.html">Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="Sertifikat.html">certificate</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#contact">Contact</a>
-                    </li>
-                    </li>
-                </ul>
-                
-            </div> 
-        </div>
-    </nav> 
-    
 
 
-    <!-- Header -->
-    <header id="header" class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h1 class="h1-large">I love cats as much as I love you </h1>
-                        <a class="btn-solid-lg page-scroll" href="index.html#contact"><i class="fas fa-user"></i>Contact Me</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </header> <!-- end of header -->
-    <!-- end of header -->
+                </div>
+            </div>
 
-<div class="gallery">
-    <div class="image-container">
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/1 (1).jpeg" alt="" onclick="showPopup(this.src)">
+            <!-- Speakers Section -->
+            <div class="certificate-category">
+                <h2 class="category-title">
+                    <span class="category-icon">🎤</span>
+                    Speakers
+                </h2>
+                <div class="certificate-grid">
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/abdimas.jpg" alt="Abdimas Speaker">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/pemateri.jpg" alt="Pemateri Certificate">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/pim.png" alt="PIM Speaker">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/im 1.png" alt="Speaker Certificate 1">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/im 2.png" alt="Speaker Certificate 2">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/im 3.png" alt="Speaker Certificate 3">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/im 4.png" alt="Speaker Certificate 4">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/im 5.png" alt="Speaker Certificate 5">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/im 6.png" alt="Speaker Certificate 6">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/8 (1).jpg" alt="Speaker Certificate 7">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Competitions Section -->
+            <div class="certificate-category">
+                <h2 class="category-title">
+                    <span class="category-icon">🏆</span>
+                    Competitions
+                </h2>
+                <div class="certificate-grid">
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/4 (1).jpg" alt="Competition Certificate 1">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/3 (4).jpg" alt="Competition Certificate 2">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/2 (1).png" alt="Competition Certificate 3">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/4 (2).jpg" alt="Competition Certificate 4">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/8 (2).jpg" alt="Competition Certificate 5">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/5 (1).jpg" alt="Competition Certificate 6">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/7 (2).jpg" alt="Competition Certificate 7">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/9 (1).png" alt="Competition Certificate 8">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Committees Section -->
+            <div class="certificate-category">
+                <h2 class="category-title">
+                    <span class="category-icon">👥</span>
+                    Committees
+                </h2>
+                <div class="certificate-grid">
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/SISKOM.png" alt="Siskom Committee">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/OCL.png" alt="OCL Committee">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/2 (4).png" alt="Committee Certificate 1">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/6 (1).jpg" alt="Committee Certificate 2">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/6 (2).jpg" alt="Committee Certificate 3">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/8 (3).jpg" alt="Committee Certificate 4">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/FAKHRIADI RASYAAD_page-0001.jpg" alt="Committee Certificate 5">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Training Section -->
+            <div class="certificate-category">
+                <h2 class="category-title">
+                    <span class="category-icon">📖</span>
+                    Training
+                </h2>
+                <div class="certificate-grid">
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/2 (3).png" alt="Training Certificate 1">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/1 (1).jpeg" alt="Training Certificate 2">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/2 (2).png" alt="Training Certificate 3">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/4 (3).jpg" alt="Training Certificate 4">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/4 (4).jpg" alt="Training Certificate 5">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/5 (2).jpg" alt="Training Certificate 6">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/7 (3).jpg" alt="Training Certificate 7">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/7 (4).jpg" alt="Training Certificate 8">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/6 (4).jpg" alt="Training Certificate 9">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="gambar/sertifikat/8 (4).jpg" alt="Training Certificate 10">
+                        <div class="certificate-overlay">
+                            <span class="view-certificate">View Certificate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/1 (4).jpeg" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/2 (1).png" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/2 (2).png" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/2 (3).png" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/2 (4).png" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/3 (4).jpg" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/4 (1).jpg" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/4 (2).jpg" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/4 (3).jpg" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/4 (4).jpg" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/5 (1).jpg" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/5 (2).jpg" alt="" onclick="showPopup(this.src)"> 
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/6 (1).jpg" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/6 (2).jpg" alt="" onclick="showPopup(this.src)">
-        </div>
-        
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/6 (4).jpg" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/7 (1).jpg" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/7 (2).jpg" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/7 (3).jpg" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/7 (4).jpg" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/8 (1).jpg" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/8 (2).jpg" alt=""onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/8 (3).jpg" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/8 (4).jpg" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/9 (1).png" alt="" onclick="showPopup(this.src)">
-        </div>
-        
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/im 1.png" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/im 2.png" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/im 3.png" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/im 4.png" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/im 5.png" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/im 6.png" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/pim.png" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/FAKHRIADI RASYAAD_page-0001.jpg" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/abdimas.jpg" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/pemateri.jpg" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/HKI.png" alt="" onclick="showPopup(this.src)">
-        </div>
-        <div class="image 3dmodel">
-            <img src="gambar/sertifikat/paper.jpg" alt="" onclick="showPopup(this.src)">
-        </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="certificate-modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-caption" id="modalCaption"></div>
     </div>
-</div>
 
-<div class="popup" id="popup" onclick="closePopup()">
-    <span class="close" onclick="closePopup()">&times;</span>
-    <img id="popup-img" src="" alt="" onclick="event.stopPropagation();">
-</div>
-
-    <!-- Copyright -->
-    <div class="copyright bg-gray">
+    <!-- Stats Section -->
+    <section style="background: var(--bg-darker);">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a class="no-line" href="index.html">Fakhriadi Rasyaad</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
+            <div class="grid-4">
+                <div class="card text-center">
+                    <div style="font-size: 3rem; color: var(--primary); font-weight: 900; margin-bottom: 1rem;">40+</div>
+                    <h4 style="margin-bottom: 0.5rem;">Total Certificates</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">All achievements</p>
+                </div>
+                <div class="card text-center">
+                    <div style="font-size: 3rem; color: var(--secondary); font-weight: 900; margin-bottom: 1rem;">8+</div>
+                    <h4 style="margin-bottom: 0.5rem;">Publications</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Research papers</p>
+                </div>
+                <div class="card text-center">
+                    <div style="font-size: 3rem; color: var(--accent); font-weight: 900; margin-bottom: 1rem;">8+</div>
+                    <h4 style="margin-bottom: 0.5rem;">Competitions</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Awards won</p>
+                </div>
+                <div class="card text-center">
+                    <div style="font-size: 3rem; color: var(--primary); font-weight: 900; margin-bottom: 1rem;">10+</div>
+                    <h4 style="margin-bottom: 0.5rem;">Speaker Events</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">As presenter</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        
-    </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
-    
-    	
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
-    <script src="/js/gallery.js"></script>
-    <script src="/js/model.js"></script>
-    <script src="js/berhasil.js"></script>
-    <script>
-        function showPopup(src) {
-            document.getElementById('popup-img').src = src;
-            document.getElementById('popup').style.display = 'flex';
-        }
-        
-        function closePopup() {
-            document.getElementById('popup').style.display = 'none';
-        }
-    </script>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text">
+                © 2026 Fakhriadi Rasyaad. All rights reserved.
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="Project.html">Projects</a>
+                <a href="Sertifikat.html">Certificates</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

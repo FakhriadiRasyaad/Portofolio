@@ -1,285 +1,421 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakhriadi Rasyaad | Mahasiswa Teknik Telekomunikasi</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Your description">
-    <meta name="author" content="Your name">
-
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
-
-    <!-- Webpage Title -->
-    <title>Fakhriadi Rasyaad</title>
+    <meta name="description" content="Portofolio Fakhriadi Rasyaad - Mahasiswa Teknik Telekomunikasi di Universitas Telkom">
+    <meta name="author" content="Fakhriadi Rasyaad">
     
-    <!-- Styles -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="gambar/logo fakhri.png">
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
-    
+<body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="gambar/logo fakhri.png" alt="Logo Fakhriadi">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html"class="active">Beranda</a></li>
+                <li><a href="Project.html" >Proyek</a></li>
+                <li><a href="Sertifikat.html">Sertifikat</a></li>
+                <li><a href="index.html#contact">Kontak</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">Mahasiswa Teknik Telekomunikasi</span>
+            <h1>
+                Fakhriadi Rasyaad<br>
+                <span class="gradient-text">23 Tahun</span>
+            </h1>
+            <p>
+                Mahasiswa aktif dari Universitas Telkom, jurusan Teknik Telekomunikasi 
+                dengan keahlian dalam desain UI/UX, desain grafis, dan pemrograman.
+            </p>
+            <div class="btn-group">
+                <a href="#about" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                    Tentang Saya
+                </a>
+                <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
         <div class="container">
-            
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="gambar/logo fakhri.png" alt="alternative"></a>  
+            <div class="grid-2" style="gap: 4rem; align-items: start;">
+                <div>
+                    <span class="section-tag">[ TENTANG SAYA ]</span>
+                    <h2 class="section-title">Halo, Saya Fakhri</h2>
+                    <div style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.9;">
+                        <p style="margin-bottom: 1.5rem;">
+                        Saya adalah mahasiswa aktif dari Universitas Telkom, menempuh gelar Sarjana (S1) di Teknik Telekomunikasi dengan IPK 3,36. Saya sangat berorientasi pada detail dan senang mempelajari hal-hal baru. Saya memiliki minat yang kuat dalam bidang telekomunikasi, penelitian biomedis, dan desain grafis.
+                        </p>
+                        <p>
+                            Selain itu, saya juga merupakan mahasiswa Magister (S2) Teknik Elektro di Universitas Telkom dengan IPK 3,9. Perjalanan akademis saya telah memperkuat keterampilan analitis, keahlian teknis, dan pola pikir berorientasi penelitian, khususnya dalam penerapan teknologi telekomunikasi dan pemrosesan sinyal untuk sistem biomedis dan kesehatan.
+                        </p>
+                    </div>
 
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Mark</a> -->
-
-            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="Project.html">Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="Sertifikat.html">certificate</a>
-                    </li>
+                    <div class="mt-3">
+                        <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Pendidikan</h3>
                     
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                
-            </div> <!-- end of navbar-collapse -->
-        </div> <!-- end of container -->
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
-
-   
-    <!-- Header -->
-    <header id="header" class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h1 class="h1-large">I love cats as much as I love you </h1>
-                        <a class="btn-solid-lg page-scroll" href="cv.html" ><i class="fas fa-user"></i> See CV</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </header> <!-- end of header -->
-    <!-- end of header -->
-
-
-    <!-- About-->
-    <div id="" class="basic-1 bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-container first">
-                        <h2>Hi there I'm Fakhri,</h2>
-                        <p>I’m an active student from Telkom
-                            University, majoring in S1
-                            Telecommunications Engineering. I aspire to
-                            work in Telecommunication field and
-                            graphic design. Additionally, I have
-                            proficiency in editing, graphic design,
-                            networks, UI/UX, and programming.</p>
-                        <h2>Education</h2>
-                        <p>Relevant courses: Introduction to Design
-                            Engineering, Algorithms and Programming,
-                            Telecommunication Networks, Python
-                            Programming, Digital Engineering, Data
-                            Communication Networks, Object-Oriented Java
-                            Programming.
+                        <!-- S2 -->
+                        <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
+                            <h4 style="color: var(--primary); margin-bottom: 1rem;">Universitas Telkom</h4>
+                            <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                                S2 Teknik Elektro • IPK: 3,9
                             </p>
-                        <p>Participated in the online UI/UX classes organized
-                            by Skilvul, achieving a skill point of 67%.</p>
-                        <h2>Personal Skills</h2>
-                        <p>Teamwork, Critical thinking, Communication Skills, Analysis in Laboratory,
-                            Research, Engineering Process, Quality Control/Assurance, and Teaching.
+                            <p style="color: var(--text-secondary); line-height: 1.8;">
+                                <strong style="color: var(--text-primary);">Fokus penelitian:</strong> 
+                                Teknik Biomedis, Pemrosesan Sinyal Biomedis, Sistem Kesehatan, 
+                                dan penerapan teknologi telekomunikasi dalam perangkat medis dan wearable.
                             </p>
-                        <h2>Achievements</h2>
-                        <h6>- Runner Up 1 UI/UX JBC (2023)</h6>
-                        <p>This competition activity is conducted in groups consisting of 3 members.</p>
-                        <h6>- Runner Up of Smart City Hackathon (2023)</h6>
-                        <p>This competition activity is conducted in groups consisting of 3 members.</p>
-                        <h6>- 3rd UI/UX Dies Natalis Sistem Informasi (2023)</h6>
-                        <p>This competition activity is conducted in groups consisting of 3 members.</p>
-                        <h6>- Advanced to the Top 163 Teams in Indonesia in the Innovillage Selection (2023)</h6>
-                        <p>This competition activity is conducted in groups consisting of 3 members.</p>
-                        <h6>- 3rd KOMFESIF UI/UX Competition (2023)</h6>
-                        <p>This competition activity is conducted in groups consisting of 4 members.</p>
-                        <h6>- Participant X-Project 9.0 Competition (2023)</h6>
-                        <p>This competition activity is conducted in groups consisting of 3 members.</p>
-                        <h6>- Participant Mobile UI/UX Competition (2024)</h6>
-                        <p>This competition activity is conducted in groups consisting of 2 members.</p>
-                        
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-container second">
-                        <div class="time">2023 - PRESENT</div>
-                        <h6>Coordinator of Communication System Laboratory</h6>
-                        <p>- Before becoming a coordinator, I served as the vice coordinator,</p>
-                        <p>- As the a head of recruitment activities, I assisted other event coordinators in their
-                            responsibilities,</p>
-                        <p>- In the absence of the chairperson, I undertook temporary duties to ensure the smooth flow
-                            of the event,</p>
-                        <p>- Executed a project to create a paper using LaTeX on SCMA and PDMA,</p>
-                        <p>- Assisted the media division in managing and designing content for Instagram.</p>
-                        <div class="time">2023 -  PRESENT</div>
-                        <h6>Staff Dewan Perwakilan Anggota (DPA) HMTT</h6>
-                        <p>- Collaborating to complete existing events and getting an important role in meetings,</p>
-                        <p>- As a member of the aspiration division, I was responsible for collecting all aspirations from
-                            undergraduate students majoring in Telecommunication Engineering,</p>
-                        <p>- Part of the media division, tasked with creating posts on Instagram.</p>
-                    </div> <!-- end of text-container -->
-                    <div class="time">2023 - PRESENT</div>
-                    <h6>Member of Optical Communication Laboratory</h6>
-                    <p>- Participated in practical sessions responsible for teaching about optics,</p>
-                    <p>- Served as the leader for the bonding night event (MAKRAB),</p>
-                    <p>- Served in the equipment division, responsible for organizing and setting up equipment before and after practical sessions.</p>
-                   
-                    <div class="time">2024</div>
-                    <h6>Internship</h6>
-                    <p>- Interned at Telkom SKO Gegerkalong,</p>
-                    <p>- Worked in the laboratory section for cables and cable accessories,</p>
-                    <p>Conducted standardization testing for fiber optic cables and FTTx devices.</p>
-                    <div class="time">2022 -  2024 </div>
-                    <h6>Participating in Community Service Program</h6>
-                    <p>- Presented material about Android Auto Assessment Application Design Based on Text
-                        Using AI to Assist Student Evaluation at SMK Telkom Bandung</p>
-                    <p>- Presented material to BNNP West Java on social media content management (2023)</p>
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-container third">
-                        <div class="time">2022 -  2024 </div>
-                    <p>- Presented material to BNNP West Java on social media content management (2023)</p>
-                    <p>-  Presented material about Android Auto Assessment Application Design Based on Text
-                        Using AI to Assist Student Evaluation at SMP Labschool Pulpen (2023)</p>
-                    <p>- Presented material about training on Planning, Operation and Management of Microhydro
-                        Power Plants in Supporting Government Programs to Improve Competence in the
-                        Renewable Energy Mix (2023)</p>
-                    <p>- Presented material to kindergarten teachers in Gedebage, West Java on scratch
-                        programming training and module creation</p>
-                            
-                        <div class="time">2023</div>
-                        <h6><a href="https://www.nolmeter.com/author/30332/Fakhriadi-Rasyaad">Freelance</a></h6>
-                        <p>- Worked as a content writer for Nolmeter.com and wrote over 100 articles</p>
-                        <p>- Served as a social media manager for Nolmeter.com, overseeing accounts on Facebook,
-                            Instagram, TikTok, Twitter, and also YouTube</p>
-                        <div class="time">2023</div>
-                        <h6>Member of PUI-PT Aicom</h6>
-                        <p>- Conducting research on molecular communication,</p>
-                        <p>- Completing tasks from organized activities,</p>
-                        <p>- Discussing research with other members on Fridays.</p>
+                        </div>
+                    
+                        <!-- S1 -->
+                        <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
+                            <h4 style="color: var(--primary); margin-bottom: 1rem;">Universitas Telkom</h4>
+                            <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                                S1 Teknik Telekomunikasi • IPK: 3,36
+                            </p>
+                            <p style="color: var(--text-secondary); line-height: 1.8;">
+                                <strong style="color: var(--text-primary);">Mata kuliah relevan:</strong> 
+                                Pengantar Rekayasa Desain, Algoritma dan Pemrograman, 
+                                Jaringan Telekomunikasi, Pemrograman Python, Teknik Digital, 
+                                Jaringan Komunikasi Data, Pemrograman Java Berorientasi Objek.
+                            </p>
+                        </div>
+                    
+                        <!-- Course -->
+                        <div class="card" style="padding: 2rem;">
+                            <h4 style="color: var(--primary); margin-bottom: 1rem;">Kursus UI/UX Skilvul</h4>
+                            <p style="color: var(--text-secondary);">
+                                Mengikuti kelas UI/UX secara online, mencapai skill point sebesar 67%.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
 
-                        <div class="time">2023</div>
-                        <h6>Organizing Committee Telkom University Esports Championship</h6>
-                        <p>- As a member of the events division, I am responsible for organizing and arranging the event
-                            sequence to ensure smooth execution.</p>
-                        
-                        <div class="time">2022</div>
-                        <h6>Participating in Department Introduction Activities</h6>
-                        <p>- The department orientation activity takes place for less than one semester.</p>
+                <div>
+                    <div class="card" style="padding: 2.5rem; margin-bottom: 2rem;">
+                        <h3 style="margin-bottom: 2rem; font-size: 1.5rem;">Keterampilan Pribadi</h3>
+                        <div class="skills-grid" style="grid-template-columns: 1fr; gap: 1rem;">
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <span style="color: var(--primary); font-size: 1.5rem;">✓</span>
+                                <span style="color: var(--text-secondary);">Kerja Tim</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <span style="color: var(--primary); font-size: 1.5rem;">✓</span>
+                                <span style="color: var(--text-secondary);">Berpikir Kritis</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <span style="color: var(--primary); font-size: 1.5rem;">✓</span>
+                                <span style="color: var(--text-secondary);">Keterampilan Komunikasi</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <span style="color: var(--primary); font-size: 1.5rem;">✓</span>
+                                <span style="color: var(--text-secondary);">Analisis di Laboratorium</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <span style="color: var(--primary); font-size: 1.5rem;">✓</span>
+                                <span style="color: var(--text-secondary);">Proses Penelitian & Rekayasa</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <span style="color: var(--primary); font-size: 1.5rem;">✓</span>
+                                <span style="color: var(--text-secondary);">Kontrol/Jaminan Kualitas</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <span style="color: var(--primary); font-size: 1.5rem;">✓</span>
+                                <span style="color: var(--text-secondary);">Mengajar</span>
+                            </div>
+                        </div>
+                    </div>
 
-                        <div class="time">2019-2020</div>
-                        <h6>The Head of The Student Council (OSIS) SMAN1 Pasir Penyu</h6>
-                        <p>- As the a head of activities, my daily tasks involve directing events for the members</p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of about -->
+                    <div class="card" style="padding: 2.5rem; text-align: center; background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(139, 92, 246, 0.1));">
+                        <h3 style="font-size: 2rem; margin-bottom: 1rem;">Statistik Singkat</h3>
+                        <div class="grid-2" style="gap: 2rem; margin-top: 2rem;">
+                            <div>
+                                <div style="font-size: 2.5rem; color: var(--primary); font-weight: 900; margin-bottom: 0.5rem;">7+</div>
+                                <p style="color: var(--text-secondary);">Prestasi</p>
+                            </div>
+                            <div>
+                                <div style="font-size: 2.5rem; color: var(--secondary); font-weight: 900; margin-bottom: 0.5rem;">100+</div>
+                                <p style="color: var(--text-secondary);">Artikel yang Ditulis</p>
+                            </div>
+                            <div>
+                                <div style="font-size: 2.5rem; color: var(--accent); font-weight: 900; margin-bottom: 0.5rem;">10+</div>
+                                <p style="color: var(--text-secondary);">Proyek</p>
+                            </div>
+                            <div>
+                                <div style="font-size: 2.5rem; color: var(--primary); font-weight: 900; margin-bottom: 0.5rem;">5+</div>
+                                <p style="color: var(--text-secondary);">Organisasi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Achievements Section -->
+    <section style="background: var(--bg-darker);">
+        <div class="container">
+            <span class="section-tag">[ PRESTASI ]</span>
+            <h2 class="section-title">Prestasi Kompetisi</h2>
+            <p class="section-subtitle">
+                Pengakuan dan penghargaan dari berbagai kompetisi di bidang UI/UX dan teknologi.
+            </p>
 
+            <div class="grid-2">
+                <div class="card">
+                    <div style="color: var(--primary); font-size: 2rem; margin-bottom: 1rem;">🥈</div>
+                    <h4 style="margin-bottom: 0.5rem;">Juara 2 UI/UX JBC (2023)</h4>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Kegiatan kompetisi ini dilakukan secara berkelompok yang terdiri dari 3 anggota.
+                    </p>
+                    <span class="tag">Desain UI/UX</span>
+                    <span class="tag">Kompetisi Tim</span>
+                </div>
 
+                <div class="card">
+                    <div style="color: var(--primary); font-size: 2rem; margin-bottom: 1rem;">🥈</div>
+                    <h4 style="margin-bottom: 0.5rem;">Juara 2 Smart City Hackathon (2023)</h4>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Kegiatan kompetisi ini dilakukan secara berkelompok yang terdiri dari 3 anggota.
+                    </p>
+                    <span class="tag">Kota Cerdas</span>
+                    <span class="tag">Hackathon</span>
+                </div>
+
+                <div class="card">
+                    <div style="color: var(--secondary); font-size: 2rem; margin-bottom: 1rem;">🥉</div>
+                    <h4 style="margin-bottom: 0.5rem;">Juara 3 UI/UX Dies Natalis SI (2023)</h4>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Kegiatan kompetisi ini dilakukan secara berkelompok yang terdiri dari 3 anggota.
+                    </p>
+                    <span class="tag">Desain UI/UX</span>
+                    <span class="tag">Dies Natalis</span>
+                </div>
+
+                <div class="card">
+                    <div style="color: var(--accent); font-size: 2rem; margin-bottom: 1rem;">🏆</div>
+                    <h4 style="margin-bottom: 0.5rem;">163 Tim Terbaik Innovillage (2023)</h4>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Lolos hingga 163 Tim Terbaik di Indonesia dalam Seleksi Innovillage.
+                    </p>
+                    <span class="tag">Inovasi</span>
+                    <span class="tag">Nasional</span>
+                </div>
+
+                <div class="card">
+                    <div style="color: var(--secondary); font-size: 2rem; margin-bottom: 1rem;">🥉</div>
+                    <h4 style="margin-bottom: 0.5rem;">Juara 3 KOMFESIF UI/UX (2023)</h4>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Kegiatan kompetisi ini dilakukan secara berkelompok yang terdiri dari 4 anggota.
+                    </p>
+                    <span class="tag">Desain UI/UX</span>
+                    <span class="tag">Festival</span>
+                </div>
+
+                <div class="card">
+                    <div style="color: var(--primary); font-size: 2rem; margin-bottom: 1rem;">✨</div>
+                    <h4 style="margin-bottom: 0.5rem;">Kompetisi UI/UX Mobile (2024)</h4>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Peserta dalam Kompetisi UI/UX Mobile yang dilakukan secara berkelompok beranggotakan 2 orang.
+                    </p>
+                    <span class="tag">Desain Mobile</span>
+                    <span class="tag">2024</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section>
+        <div class="container">
+            <span class="section-tag">[ PENGALAMAN ]</span>
+            <h2 class="section-title">Perjalanan Profesional</h2>
+            <p class="section-subtitle">
+                Pengalaman akademis dan profesional saya di bidang telekomunikasi.
+            </p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 - Sekarang</div>
+                    <h3 class="timeline-title">Anggota Penelitian – Laboratorium SPIS</h3>
+                    <div class="timeline-subtitle">Universitas Telkom</div>
+                    <ul class="timeline-description" style="list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 0.5rem;">→ Melakukan penelitian dalam pemrosesan sinyal biomedis, termasuk ECG, EMG, dan EEG</li>
+                        <li style="margin-bottom: 0.5rem;">→ Terlibat dalam proyek penelitian biomedis berbasis AI seperti AI-REPOSE untuk analisis postur dan rehabilitasi</li>
+                        <li style="margin-bottom: 0.5rem;">→ Menerapkan teknik pemrosesan sinyal, analisis data, dan machine learning untuk aplikasi terkait kesehatan</li>
+                        <li>→ Berkolaborasi SDGS Telkom University dalam mencegah KDRT di Kab. Bandung Barat dengan membuat media screening awal untuk korban menggunakan EEG dan Chatbot</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - 2024</div>
+                    <h3 class="timeline-title">Koordinator Laboratorium Sistem Komunikasi</h3>
+                    <div class="timeline-subtitle">Universitas Telkom</div>
+                    <ul class="timeline-description" style="list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 0.5rem;">→ Sebelum menjadi koordinator, saya menjabat sebagai wakil koordinator</li>
+                        <li style="margin-bottom: 0.5rem;">→ Sebagai ketua kegiatan rekrutmen, saya membantu koordinator acara lainnya</li>
+                        <li style="margin-bottom: 0.5rem;">→ Mengeksekusi proyek pembuatan paper menggunakan LaTeX tentang SCMA dan PDMA</li>
+                        <li>→ Membantu divisi media dalam mengelola dan mendesain konten untuk Instagram</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - 2024</div>
+                    <h3 class="timeline-title">Staf Dewan Perwakilan Anggota (DPA) HMTT</h3>
+                    <div class="timeline-subtitle">Dewan Perwakilan Mahasiswa</div>
+                    <ul class="timeline-description" style="list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 0.5rem;">→ Berkolaborasi untuk menyelesaikan acara yang ada dan mendapat peran penting dalam rapat</li>
+                        <li style="margin-bottom: 0.5rem;">→ Anggota divisi aspirasi, bertanggung jawab untuk mengumpulkan aspirasi dari mahasiswa</li>
+                        <li>→ Bagian dari divisi media, bertugas membuat postingan di Instagram</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - 2024</div>
+                    <h3 class="timeline-title">Anggota Laboratorium Komunikasi Optik</h3>
+                    <div class="timeline-subtitle">Universitas Telkom</div>
+                    <ul class="timeline-description" style="list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 0.5rem;">→ Berpartisipasi dalam sesi praktikum yang bertanggung jawab untuk mengajar tentang optik</li>
+                        <li style="margin-bottom: 0.5rem;">→ Menjabat sebagai ketua acara malam keakraban (MAKRAB)</li>
+                        <li>→ Bertanggung jawab mengatur dan menyiapkan peralatan sebelum dan sesudah sesi praktikum</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <h3 class="timeline-title">Magang di Telkom SKO Gegerkalong</h3>
+                    <div class="timeline-subtitle">Bagian Laboratorium</div>
+                    <p class="timeline-description">
+                        Bekerja di bagian laboratorium untuk kabel dan aksesoris kabel. Melakukan pengujian standarisasi 
+                        untuk kabel serat optik dan perangkat FTTx.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2023</div>
+                    <h3 class="timeline-title">
+                        <a href="https://www.nolmeter.com/author/30332/Fakhriadi-Rasyaad" target="_blank" style="color: var(--primary);">
+                            Penulis Konten Freelance
+                        </a>
+                    </h3>
+                    <div class="timeline-subtitle">Nolmeter.com</div>
+                    <ul class="timeline-description" style="list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 0.5rem;">→ Bekerja sebagai penulis konten dan menulis lebih dari 100 artikel</li>
+                        <li>→ Menjabat sebagai manajer media sosial untuk Facebook, Instagram, TikTok, Twitter, dan YouTube</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2023</div>
+                    <h3 class="timeline-title">Anggota PUI-PT Aicom</h3>
+                    <div class="timeline-subtitle">Kelompok Penelitian</div>
+                    <ul class="timeline-description" style="list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 0.5rem;">→ Melakukan penelitian tentang komunikasi molekuler</li>
+                        <li style="margin-bottom: 0.5rem;">→ Menyelesaikan tugas dari kegiatan yang diselenggarakan</li>
+                        <li>→ Berdiskusi tentang penelitian dengan anggota lain setiap hari Jumat</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 - 2020</div>
+                    <h3 class="timeline-title">Ketua Organisasi Siswa Intra Sekolah (OSIS)</h3>
+                    <div class="timeline-subtitle">SMAN1 Pasir Penyu</div>
+                    <p class="timeline-description">
+                        Sebagai ketua kegiatan, tugas harian saya melibatkan mengarahkan acara untuk anggota dan 
+                        memastikan kelancaran pelaksanaan program sekolah.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background: var(--bg-darker);">
+        <div class="container">
+            <span class="section-tag">[ MARI TERHUBUNG ]</span>
+            <h2 class="section-title text-center">Mari Terhubung</h2>
+            <p class="section-subtitle text-center" style="margin: 0 auto 3rem;">
+                Jangan ragu untuk menghubungi saya untuk kolaborasi, peluang, atau sekadar menyapa!
+            </p>
+
+            <div class="social-container" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+                <a href="https://github.com/FakhriadiRasyaad" target="_blank" class="social-link" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://line.me/ti/p/7JhwWxiOXL" target="_blank" class="social-link" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/fakhriadi_rasyaad/" target="_blank" class="social-link" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/@fakhrigt6235" target="_blank" class="social-link" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/fakhriadi-rasyaad-b3a42b245/" target="_blank" class="social-link" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+                <a href="mailto:fakhriadi06ras@gmail.com" class="social-link" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <div id="contact" class="footer bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="social-container">
-                        <span class="fa-stack">
-                            <a href="https://github.com/FakhriadiRasyaad">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-github fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="https://line.me/ti/p/7JhwWxiOXL">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-line fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="https://www.instagram.com/fakhriadi_rasyaad/">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="https://www.youtube.com/@fakhrigt6235">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-youtube fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="https://www.linkedin.com/in/fakhriadi-rasyaad-b3a42b245/">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="mailto:fakhriadi06ras@gmail.com">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa- fa-google fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div> <!-- end of social-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
-    <!-- end of footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text">
+                © 2026 Fakhriadi Rasyaad. Hak cipta dilindungi.
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Beranda</a>
+                <a href="Project.html">Proyek</a>
+                <a href="Sertifikat.html">Sertifikat</a>
+                <a href="#contact">Kontak</a>
+            </div>
+        </div>
+    </footer>
 
-
-    <!-- Copyright -->
-    <div class="copyright bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a class="no-line" href="index.html">Fakhriadi Rasyaad</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-
-        
-    </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
-    
-    	
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="scripts.js"></script>
 </body>
 </html>

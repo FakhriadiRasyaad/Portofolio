@@ -1,287 +1,760 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Your description">
-    <meta name="author" content="Your name">
-
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
-
-    <!-- Webpage Title -->
-    <title>Fakhriadi Rasyaad</title>
-    
-    <!-- Styles -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Fakhriadi Rasyaad</title>
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="gambar/logo fakhri.png">
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
-    
+<body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="gambar/logo fakhri.png" alt="Fakhriadi Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Project.html" class="active">Proyek</a></li>
+                <li><a href="Sertifikat.html">Sertifikat</a></li>
+                <li><a href="index.html#contact">Kontak</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="hero-content">
+            <span class="hero-tag">Portfolio</span>
+            <h1>
+                Halaman <span class="gradient-text">Proyek</span><br>
+                <span class="gradient-text-alt">Saya</span>
+            </h1>
+            <p>
+                Collection of my projects.
+            </p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section style="padding: 2rem;">
         <div class="container">
-            
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="gambar/logo fakhri.png" alt="alternative"></a>  
+            <div class="project-filters">
+                <button class="filter-btn" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="3dmodel">3D Model</button>
+                <button class="filter-btn" data-filter="website">Website</button>
+                <button class="filter-btn" data-filter="uiux">UI/UX Design</button>
+                <button class="filter-btn" data-filter="design">Image Design</button>
+                <button class="filter-btn" data-filter="publication">Publication</button>
+                <button class="filter-btn" data-filter="iot">IoT/AI/ML/DL</button>
+                <button class="filter-btn" data-filter="game">Game</button>
+            </div>
+        </div>
+    </section>
 
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Mark</a> -->
-
-            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="Project.html">Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="Sertifikat.html">certificate</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#contact">Contact</a>
-                    </li>
-                    </li>
-                </ul>
-                
-            </div> <!-- end of navbar-collapse -->
-        </div> <!-- end of container -->
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
-
-
-    <!-- Header -->
-    <header id="header" class="header">
+    <!-- Projects Grid -->
+    <section>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h1 class="h1-large">I love cats as much as I love you </h1>
-                        <a class="btn-solid-lg page-scroll" href="index.html#contact"><i class="fas fa-user"></i>Contact Me</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </header> <!-- end of header -->
-    <!-- end of header -->
+            <div class="projects-grid" id="projectsGrid">
+                <!-- 3D Models -->
+                <div class="project-card" data-category="3dmodel">
+                    <a href="https://app.sketchup.com/share/tc/asia/1dE7GkINA8Y?stoken=pUPCZ2G4rlSKkNcf-oDaT1V8DPZB2qhWVddyL93b-oOvakWvmAhCaU8hZ3gpJKXK&source=web" target="_blank">
+                        <div class="project-image">
+                            <img src="gambar/3D 1 (1).png" alt="3D Model 1">
+                            <div class="project-overlay">
+                                <span class="view-project">View 3D Model</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">3D Modeling</span>
+                            <h3>Innovillage Design - Model 1</h3>
+                            <p>Rancangan 3D pertama pada kompetisi Innovillage menggunakan SketchUp</p>
+                            <div class="project-tags">
+                                <span class="tag">SketchUp</span>
+                                <span class="tag">3D Design</span>
+                                <span class="tag">Competition</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
- <!-- Button navigation -->
- <div class="button-container">
-    <button class="button active" onclick="switchModel('model1')">3D Model</button>
-    <button class="button" onclick="switchModel('website')">Website</button>
-    <button class="button" onclick="switchModel('uiux')">UI/UX</button>
-    <button class="button" onclick="switchModel('design')">Design</button>
-</div>
+                <div class="project-card" data-category="3dmodel">
+                    <a href="https://app.sketchup.com/share/tc/asia/D3oMTFP1efQ?stoken=uEuG-Dj0EzrO3T4qGRBkdoaD791efmGgzE2ZH3MWkozwkGpIJbW0Pe6Ur4CmruH_&source=web" target="_blank">
+                        <div class="project-image">
+                            <img src="gambar/3D 1 (4).png" alt="3D Model 2">
+                            <div class="project-overlay">
+                                <span class="view-project">View 3D Model</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">3D Modeling</span>
+                            <h3>Exhaust System with Gas Sensor</h3>
+                            <p>Rancangan 3D alat exhaust dengan sensor gas untuk Smart City Hackathon</p>
+                            <div class="project-tags">
+                                <span class="tag">SketchUp</span>
+                                <span class="tag">IoT Design</span>
+                                <span class="tag">Hackathon</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-<!-- Card container -->
-<div id="model1" class="card-container">
-    <div class="card" data-url="https://app.sketchup.com/share/tc/asia/1dE7GkINA8Y?stoken=pUPCZ2G4rlSKkNcf-oDaT1V8DPZB2qhWVddyL93b-oOvakWvmAhCaU8hZ3gpJKXK&source=web">
-        <img src="gambar/3D 1 (1).png" alt="Model 1">
-        <h3>Model 1</h3>
-        <p>The first 3D design in the Innovillage competition</p>
-    </div>
-    <div class="card" data-url="https://app.sketchup.com/share/tc/asia/D3oMTFP1efQ?stoken=uEuG-Dj0EzrO3T4qGRBkdoaD791efmGgzE2ZH3MWkozwkGpIJbW0Pe6Ur4CmruH_&source=web">
-        <img src="gambar/3D 1 (4).png" alt="Model 2">
-        <h3>Model 2</h3>
-        <p>3D design of exhaust device with gas sensor, Smart City Hackathon competition</p>
-    </div>
-    <div class="card" data-url="https://app.sketchup.com/share/tc/asia/kn1bvUTA5ME?stoken=SYFkw4fVRnHuDT0AEMwcUhMYaWUOrhKZuMvUa63qbY8GzApjgYFwZIn4tPrnGQr4&source=web">
-        <img src="gambar/3D 1 (3).png" alt="Model 3">
-        <h3>Model 3</h3>
-        <p>The final 3D design of the Innovillage competition</p>
-    </div>
-    <div class="card" data-url="https://app.sketchup.com/share/tc/asia/3T9OwvdTa2M?stoken=P1KLi6EEVQIhyPYBAxkGalbiUFB28H7SUL5OrL6Jm6Nug0BUydQ-qalO869aVBSU&source=web">
-        <img src="gambar/3D 1 (2).png" alt="Model 4">
-        <h3>Model 4</h3>
-        <p>3D design in PKM KC competition</p>
-    </div>
-    <div class="card" data-url="https://app.sketchup.com/share/tc/asia/bjMhBAfQATI?stoken=5brgDM0u7M_bEO4xPxrXS5ZwLFNK4dcXD0SA90qG3aFeUQhc_7v2SgjGLIibDhVx&source=web">
-        <img src="gambar/3D 1 (5).png" alt="Model 4">
-        <h3>Model 5</h3>
-        <p>3D design for for entrepreneurial tasks</p>
-    </div>
-</div>
-<!-- Card container -->
-<div id="website" class="card-container">
-    <div class="card" data-url="https://labsiskom.com">
-        <a href="https://labsiskom.com">
-        <img src="gambar/Siskom.png" alt="Model 1"></a>
-        <h3>Model 1</h3>
-        <p>Designing a website for Siskom laboratory</p>
-    </div>
-    <div class="card" data-url="https://opticomlab.com/">
-        <a href="https://opticomlab.com/">
-        <img src="gambar/Optikom.png" alt="Model 2"></a>
-        <h3>Model 2</h3>
-        <p>Designing a website for Opticom laboratory</p>
-    </div>
-    <div class="card" data-url="https://sikatbandung.my.id/">
-        <a href="https://sikatbandung.my.id/">
-        <img src="gambar/sikat.png" alt="Model 3"></a>
-        <h3>Model 3</h3>
-        <p>This project is in collaboration with Diskominfo Bandung, where I am fully stuck in the system with multiple logins, this project is worked on by 4 people.</p>
-    </div>
-    <div class="card" data-url="https://presentationicicyta.humicprototyping.com/">
-        <a href="https://presentationicicyta.humicprototyping.com/">
-        <img src="gambar/humic.png" alt="Model 4"></a>
-        <h3>Model 4</h3>
-        <p>Internship at Humic Telkom University creating website displays using WordPress.</p>
-    </div>
-    <div class="card" data-url="https://idea-path.vercel.app/">
-        <a href="https://idea-path.vercel.app/">
-        <img src="gambar/idea.png" alt="Model 5"></a>
-        <h3>Model 5</h3>
-        <p>Designing a website for competition</p>
-    </div>
-    <div class="card" data-url="https://standbyincubator.com/">
-        <a href="https://standbyincubator.com/">
-        <img src="gambar/incubator.png" alt="Model 6"></a>
-        <h3>Model 6</h3>
-        <p>Website Development, Backend Developer (Storage Management)</p>
-    </div>
-</div>
+                <div class="project-card" data-category="3dmodel">
+                    <a href="https://app.sketchup.com/share/tc/asia/kn1bvUTA5ME?stoken=SYFkw4fVRnHuDT0AEMwcUhMYaWUOrhKZuMvUa63qbY8GzApjgYFwZIn4tPrnGQr4&source=web" target="_blank">
+                        <div class="project-image">
+                            <img src="gambar/3D 1 (3).png" alt="3D Model 3">
+                            <div class="project-overlay">
+                                <span class="view-project">View 3D Model</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">3D Modeling</span>
+                            <h3>Innovillage Final Design</h3>
+                            <p>Rancangan 3D final pada kompetisi Innovillage</p>
+                            <div class="project-tags">
+                                <span class="tag">SketchUp</span>
+                                <span class="tag">3D Design</span>
+                                <span class="tag">Final Project</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-card" data-category="3dmodel">
+                    <a href="https://app.sketchup.com/share/tc/asia/3T9OwvdTa2M?stoken=P1KLi6EEVQIhyPYBAxkGalbiUFB28H7SUL5OrL6Jm6Nug0BUydQ-qalO869aVBSU&source=web" target="_blank">
+                        <div class="project-image">
+                            <img src="gambar/3D 1 (2).png" alt="3D Model 4">
+                            <div class="project-overlay">
+                                <span class="view-project">View 3D Model</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">3D Modeling</span>
+                            <h3>PKM KC Competition Design</h3>
+                            <p>Rancangan 3D pada kompetisi PKM KC</p>
+                            <div class="project-tags">
+                                <span class="tag">SketchUp</span>
+                                <span class="tag">PKM</span>
+                                <span class="tag">Research</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-card" data-category="3dmodel">
+                    <a href="https://app.sketchup.com/share/tc/asia/fD20aG-sdMo?source=web&stoken=y9UDJiIzcLjGV_eaRqnbOucNYulquqQyw1byVaXQdHeHw7txRfjt1h2X7j8JZlAX" target="_blank">
+                        <div class="project-image">
+                            <img src="gambar/3D 1 (6).png" alt="3D Model 3">
+                            <div class="project-overlay">
+                                <span class="view-project">View 3D Model</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">3D Modeling</span>
+                            <h3>Innovillage 2025 Final Design</h3>
+                            <p>Rancangan 3D final pada kompetisi Innovillage Sebagai Mentor</p>
+                            <div class="project-tags">
+                                <span class="tag">SketchUp</span>
+                                <span class="tag">3D Design</span>
+                                <span class="tag">Final Project</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-card" data-category="3dmodel">
+                    <a href="https://app.sketchup.com/share/tc/asia/3Tpn9l0FlOQ?source=web&stoken=C8ndc1LH0CItlF0QrtDhajIVmw8fjEKiAilVPSRNCgfTGjaCM8F1gmNgidAedz7r" target="_blank">
+                        <div class="project-image">
+                            <img src="gambar/3D 1 (7).png" alt="3D Model 3">
+                            <div class="project-overlay">
+                                <span class="view-project">View 3D Model</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">3D Modeling</span>
+                            <h3>Heart Rate Smartwatch</h3>
+                            <p>Rancangan 3D penelitian perangkat EKG</p>
+                            <div class="project-tags">
+                                <span class="tag">SketchUp</span>
+                                <span class="tag">3D Design</span>
+                                <span class="tag">Final Project</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Websites -->
+                <div class="project-card" data-category="website">
+                    <a href="https://siskomlab.vercel.app/" target="_blank">
+                        <div class="project-image">
+                            <img src="gambar/Siskom.png" alt="Siskom Website">
+                            <div class="project-overlay">
+                                <span class="view-project">Visit Website</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Web Development</span>
+                            <h3>Siskom Laboratory Website</h3>
+                            <p>Merancang website untuk Communication System Laboratory dengan desain modern</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <a href="https://optikom.vercel.app/" target="_blank">
+                        <div class="project-image">
+                            <img src="gambar/Optikom.png" alt="Optikom Website">
+                            <div class="project-overlay">
+                                <span class="view-project">Visit Website</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Web Development</span>
+                            <h3>Optikom Laboratory Website</h3>
+                            <p>Merancang website untuk Optical Communication Laboratory</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <a href="https://idea-path.vercel.app/" target="_blank">
+                        <div class="project-image">
+                            <img src="gambar/idea.png" alt="Optikom Website">
+                            <div class="project-overlay">
+                                <span class="view-project">Visit Website</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Web Development</span>
+                            <h3>IdeaPath</h3>
+                            <p>Merancang website untuk perlombaan</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <a href="https://standbyincubator.com/" target="_blank">
+                        <div class="project-image">
+                            <img src="gambar/incubator.png" alt="Optikom Website">
+                            <div class="project-overlay">
+                                <span class="view-project">Visit Website</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Web Development</span>
+                            <h3>StandBy</h3>
+                            <p>Merancang website untuk tugas akhir perkuliahan</p>
+                            <div class="project-tags">
+                                <span class="tag">Next.js</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <a href="https://icicy-ta2024.vercel.app/" target="_blank">
+                        <div class="project-image">
+                            <img src="gambar/humic.png" alt="Optikom Website">
+                            <div class="project-overlay">
+                                <span class="view-project">Visit Website</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Web Development</span>
+                            <h3>ICICyTA 2024</h3>
+                            <p>Merancang website untuk internasional conferance</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <a href="https://motion-us.vercel.app/" target="_blank">
+                        <div class="project-image">
+                            <img src="gambar/motion.png" alt="Optikom Website">
+                            <div class="project-overlay">
+                                <span class="view-project">Visit Website</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Web Development</span>
+                            <h3>Motion Us</h3>
+                            <p>Merancang website untuk bisnis kecil photobooth online</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <a href="https://kbblawankdrt.com/" target="_blank">
+                        <div class="project-image">
+                            <img src="gambar/kbb.png" alt="Optikom Website">
+                            <div class="project-overlay">
+                                <span class="view-project">Visit Website</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Web Development</span>
+                            <h3>KBB Lawan KDRT</h3>
+                            <p>Merancang website untuk mencegah KDRT Kab. Bandung Barat</p>
+                            <div class="project-tags">
+                                <span class="tag">Laravel</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
 
-<!-- Card container -->
-<div id="uiux" class="card-container">
-    <div class="card" data-url="https://www.figma.com/proto/DPHFrk1gWe4RQtptyC8VlR/Prototipe?node-id=1-1854&t=ThCo7IBMztR35g81-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A1828&show-proto-sidebar=1">
-        <a href="https://www.figma.com/proto/DPHFrk1gWe4RQtptyC8VlR/Prototipe?node-id=1-1854&t=ThCo7IBMztR35g81-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A1828&show-proto-sidebar=1">
-        <img src="gambar/Muc.png" alt="Model 1"></a>
-        <h3>Model 1</h3>
-        <p>NobarKuy is an application design for watching together and has AI features, designed by 2 people.</p>
-        <p></p>
-    </div>
-    <div class="card" data-url="https://www.figma.com/proto/nYsn3RlIu6bwvGOVspoRU9/Prototipe-EC?node-id=1-29&t=i6ui3klL3ueEyZFT-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A904">
-        <a href="https://www.figma.com/proto/nYsn3RlIu6bwvGOVspoRU9/Prototipe-EC?node-id=1-29&t=i6ui3klL3ueEyZFT-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A904">
-        <img src="gambar/hton.png" alt="Model 2"></a>
-        <h3>Model 2</h3>
-        <p>EnviroClear application design for monitoring of exhaust, designed by 3 people</p>
-    </div>
-    <div class="card" data-url="https://www.figma.com/proto/uIxr4NMUINKeTKRk5XIJtZ/YBBA?node-id=38-292&t=YU1k1XEoDwSisgSj-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=12%3A2&show-proto-sidebar=1">
-        <a href="https://www.figma.com/proto/uIxr4NMUINKeTKRk5XIJtZ/YBBA?node-id=38-292&t=YU1k1XEoDwSisgSj-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=12%3A2&show-proto-sidebar=1">
-        <img src="gambar/eva.png" alt="Model 3"></a>
-        <h3>Model 3</h3>
-        <p>EvaAcademy app design for online learning, Designed by 3 people</p>
-    </div>
-    <div class="card" data-url="https://www.figma.com/proto/lHJJr2u191vII9hrRKKMda/Prototipe?page-id=0%3A1&node-id=15-20115&viewport=-1870%2C42340%2C0.37&t=GMs6EIJS3XXMDiRF-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=15%3A20115">
-        <a href="https://www.figma.com/proto/lHJJr2u191vII9hrRKKMda/Prototipe?page-id=0%3A1&node-id=15-20115&viewport=-1870%2C42340%2C0.37&t=GMs6EIJS3XXMDiRF-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=15%3A20115">
-        <img src="gambar/ihealt.png" alt="Model 4"></a>
-        <h3>Model 4</h3>
-        <p>IHealt is an app design for health and sports monitoring, Designed by 3 people</p>
-    </div>
-    <div class="card" data-url="https://www.figma.com/proto/fgZphpI9JuCZ190rFxid3U/JuaraKU-YBBA?node-id=1-2556&t=552olL8a6pjEx317-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2556&show-proto-sidebar=1">
-        <a href="https://www.figma.com/proto/fgZphpI9JuCZ190rFxid3U/JuaraKU-YBBA?node-id=1-2556&t=552olL8a6pjEx317-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2556&show-proto-sidebar=1">
-        <img src="gambar/juaraku.png" alt="Model 4"></a>
-        <h3>Model 5</h3>
-        <p>Juaraku is an app design for online learning, Dirancang oleh 4 orang</p>
-    </div>
-</div>
+                <!-- UI/UX Projects -->
+                <div class="project-card" data-category="uiux">
+                    <a href="https://www.figma.com/proto/DPHFrk1gWe4RQtptyC8VlR/Prototipe?node-id=1-1854&t=ThCo7IBMztR35g81-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A1828&show-proto-sidebar=1" target="_blank">
+                        <div class="project-image">
+                            <img src="gambar/Muc.png" alt="NobarKuy App">
+                            <div class="project-overlay">
+                                <span class="view-project">View Prototype</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">UI/UX Design</span>
+                            <h3>NobarKuy - Watch Together App</h3>
+                            <p>Rancangan aplikasi untuk nonton bersama dengan fitur AI, dirancang oleh 2 orang</p>
+                            <div class="project-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">Mobile App</span>
+                                <span class="tag">AI Features</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-<!-- Card container -->
-<div id="design" class="card-container">
+                <div class="project-card" data-category="uiux">
+                    <a href="https://www.figma.com/proto/nYsn3RlIu6bwvGOVspoRU9/Prototipe-EC?node-id=1-29&t=i6ui3klL3ueEyZFT-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A904" target="_blank">
+                        <div class="project-image">
+                            <img src="gambar/hton.png" alt="EnviroClear App">
+                            <div class="project-overlay">
+                                <span class="view-project">View Prototype</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">UI/UX Design</span>
+                            <h3>EnviroClear - Exhaust Monitoring</h3>
+                            <p>Rancangan aplikasi untuk monitoring exhaust system, dirancang oleh 3 orang</p>
+                            <div class="project-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">IoT App</span>
+                                <span class="tag">Monitoring</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-    <div class="card" data-url="gambar/desain/5.png">
-        <img src="gambar/desain/5.png" alt="Model 4">
-        <h3>Model 1</h3>
-        <p>Create an online game product design, using photoshop</p>
-    </div>
-    <div class="card" data-url="gambar/desain/6.png">
-        <img src="gambar/desain/6.png" alt="Model 4">
-        <h3>Model 2</h3>
-        <p>Create a BIBI logo design, using medibang</p>
-    </div>
-   
-    <div class="card" data-url="gambar/desain/8.png">
-        <img src="gambar/desain/8.png" alt="Model 4">
-        <h3>Model 3</h3>
-        <p>Creating a poster design for DPA Telecommunication Engineering instagram feeds, using photoshop</p>
-    </div>
-    <div class="card" data-url="gambar/desain/9.png">
-        <img src="gambar/desain/9.png" alt="Model 4">
-        <h3>Model 4</h3>
-        <p>Creating product logos for entrepreneurship courses, using medibang</p>
-    </div>
-    <div class="card" data-url="gambar/desain/10.png">
-        <img src="gambar/desain/10.png" alt="Model 4">
-        <h3>Model 5</h3>
-        <p>Create JuaraKu logo design, using medibang</p>
-    </div>
-    <div class="card" data-url="gambar/desain/11.png">
-        <img src="gambar/desain/11.png" alt="Model 4">
-        <h3>Model 6</h3>
-        <p>Create an EnviroClear logo design, using photoshop</p>
-    </div>
-    <div class="card" data-url="gambar/desain/12.jpg">
-        <img src="gambar/desain/12.jpg" alt="Model 4">
-        <h3>Model 7</h3>
-        <p>Creating a poster design for DPA Telecommunication Engineering instagram feeds, using photoshop</p>
-    </div>
-    <div class="card" data-url="gambar/desain/14.png">
-        <img src="gambar/desain/14.png" alt="Model 4">
-        <h3>Model 8</h3>
-        <p>Freelance content writer and Social Media Specialist at Nolmeter.com, using photoshop</p>
-    </div>
-    <div class="card" data-url="gambar/desain/15.png">
-        <img src="gambar/desain/15.png" alt="Model 4">
-        <h3>Model 9</h3>
-        <p>Creating a poster design for DPA Telecommunication Engineering instagram feeds, using photoshop</p>
-    </div>
-    <div class="card" data-url="gambar/desain/16.png">
-        <img src="gambar/desain/16.png" alt="Model 4">
-        <h3>Model 10</h3>
-        <p>Create an IHealt logo design, using medibang</p>
-    </div>
-</div>
+                <div class="project-card" data-category="uiux">
+                    <a href="https://www.figma.com/proto/uIxr4NMUINKeTKRk5XIJtZ/YBBA?node-id=38-292&t=YU1k1XEoDwSisgSj-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=12%3A2&show-proto-sidebar=1" target="_blank">
+                        <div class="project-image">
+                            <img src="gambar/eva.png" alt="EvaAcademy App">
+                            <div class="project-overlay">
+                                <span class="view-project">View Prototype</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">UI/UX Design</span>
+                            <h3>EvaAcademy - Online Learning</h3>
+                            <p>Rancangan aplikasi untuk pembelajaran online, dirancang oleh 3 orang</p>
+                            <div class="project-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">E-Learning</span>
+                                <span class="tag">Education</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
+                <div class="project-card" data-category="uiux">
+                    <a href="https://www.figma.com/proto/lHJJr2u191vII9hrRKKMda/Prototipe?page-id=0%3A1&node-id=15-20115&viewport=-1870%2C42340%2C0.37&t=GMs6EIJS3XXMDiRF-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=15%3A20115" target="_blank">
+                        <div class="project-image">
+                            <img src="gambar/ihealt.png" alt="IHealt App">
+                            <div class="project-overlay">
+                                <span class="view-project">View Prototype</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">UI/UX Design</span>
+                            <h3>IHealt - Health & Fitness</h3>
+                            <p>Rancangan aplikasi untuk monitoring kesehatan dan olahraga, dirancang oleh 3 orang</p>
+                            <div class="project-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">Health App</span>
+                                <span class="tag">Fitness</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <iframe id="modelIframe" src=""></iframe>
-    </div>
-</div>
+                <div class="project-card" data-category="uiux">
+                    <a href="https://www.figma.com/proto/fgZphpI9JuCZ190rFxid3U/JuaraKU-YBBA?node-id=1-2556&t=552olL8a6pjEx317-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2556&show-proto-sidebar=1" target="_blank">
+                        <div class="project-image">
+                            <img src="gambar/juaraku.png" alt="JuaraKU App">
+                            <div class="project-overlay">
+                                <span class="view-project">View Prototype</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">UI/UX Design</span>
+                            <h3>JuaraKU - Learning Platform</h3>
+                            <p>Rancangan aplikasi untuk pembelajaran online, dirancang oleh 4 orang</p>
+                            <div class="project-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">Education</span>
+                                <span class="tag">Mobile</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-    <!-- Copyright -->
-    <div class="copyright bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a class="no-line" href="index.html">Fakhriadi Rasyaad</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
-    
-    	
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
-    <script src="/js/gallery.js"></script>
-    <script src="/js/model.js"></script>
-    <script src="js/berhasil.js"></script>
+                <!-- Design Projects -->
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="gambar/desain/5.png" alt="Game Product Design">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Graphic Design</span>
+                        <h3>Online Game Product Design</h3>
+                        <p>Membuat desain produk game online menggunakan Photoshop</p>
+                        <div class="project-tags">
+                            <span class="tag">Photoshop</span>
+                            <span class="tag">Game Design</span>
+                            <span class="tag">Product</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="gambar/desain/6.png" alt="BIBI Logo">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Logo Design</span>
+                        <h3>BIBI Logo Design</h3>
+                        <p>Membuat desain logo BIBI menggunakan MediBang</p>
+                        <div class="project-tags">
+                            <span class="tag">MediBang</span>
+                            <span class="tag">Logo</span>
+                            <span class="tag">Branding</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="gambar/desain/8.png" alt="DPA Poster">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Social Media Design</span>
+                        <h3>DPA Instagram Feed Poster</h3>
+                        <p>Membuat desain poster untuk postingan feeds Instagram DPA Teknik Telekomunikasi</p>
+                        <div class="project-tags">
+                            <span class="tag">Photoshop</span>
+                            <span class="tag">Social Media</span>
+                            <span class="tag">Poster</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="gambar/desain/9.png" alt="Product Logo">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Logo Design</span>
+                        <h3>Entrepreneurship Product Logo</h3>
+                        <p>Membuat logo produk untuk mata kuliah kewirausahaan menggunakan MediBang</p>
+                        <div class="project-tags">
+                            <span class="tag">MediBang</span>
+                            <span class="tag">Logo</span>
+                            <span class="tag">Product</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="gambar/desain/10.png" alt="JuaraKu Logo">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Logo Design</span>
+                        <h3>JuaraKu Logo Design</h3>
+                        <p>Membuat desain logo JuaraKu menggunakan MediBang</p>
+                        <div class="project-tags">
+                            <span class="tag">MediBang</span>
+                            <span class="tag">Logo</span>
+                            <span class="tag">App Branding</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="gambar/desain/11.png" alt="EnviroClear Logo">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Logo Design</span>
+                        <h3>EnviroClear Logo Design</h3>
+                        <p>Membuat desain logo EnviroClear menggunakan Photoshop</p>
+                        <div class="project-tags">
+                            <span class="tag">Photoshop</span>
+                            <span class="tag">Logo</span>
+                            <span class="tag">Environmental</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="gambar/desain/12.jpg" alt="DPA Feed Design">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Social Media Design</span>
+                        <h3>DPA Instagram Feed Design</h3>
+                        <p>Membuat desain poster untuk postingan feeds Instagram DPA</p>
+                        <div class="project-tags">
+                            <span class="tag">Photoshop</span>
+                            <span class="tag">Instagram</span>
+                            <span class="tag">Content</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="gambar/desain/14.png" alt="Nolmeter Content">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Content Design</span>
+                        <h3>Nolmeter Content Design</h3>
+                        <p>Freelance sebagai content writer dan Social Media Specialist di Nolmeter.com</p>
+                        <div class="project-tags">
+                            <span class="tag">Photoshop</span>
+                            <span class="tag">Content</span>
+                            <span class="tag">Freelance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="gambar/desain/15.png" alt="DPA Poster 2">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Social Media Design</span>
+                        <h3>DPA Instagram Feed Poster</h3>
+                        <p>Membuat desain poster untuk postingan feeds Instagram DPA</p>
+                        <div class="project-tags">
+                            <span class="tag">Photoshop</span>
+                            <span class="tag">Social Media</span>
+                            <span class="tag">Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="gambar/desain/16.png" alt="IHealt Logo">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Logo Design</span>
+                        <h3>IHealt Logo Design</h3>
+                        <p>Membuat desain logo IHealt menggunakan MediBang</p>
+                        <div class="project-tags">
+                            <span class="tag">MediBang</span>
+                            <span class="tag">Logo</span>
+                            <span class="tag">Health App</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publikasi -->
+                <div class="project-card" data-category="publication">
+                    <div class="project-image">
+                        <img src="gambar/ICOCSETI2024.jpg" alt="IHealt Logo">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Publication</span>
+                        <h3>ICOCSETI 2025</h3>
+                        <p>Developing a Scalable Next.js Platform for IoT Monitoring Using Backend-as-a-Service with a Comparison of Supabase and Firebase</p>
+                        <div class="project-tags">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="publication">
+                    <div class="project-image">
+                        <img src="gambar/Gen-City2025.png" alt="IHealt Logo">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Publication</span>
+                        <h3>Gen-City 2025</h3>
+                        <p>Machine Learning Framework for Epilepsy Progression Detection On Longitudinal EEG: A TUEP-Based Study</p>
+                        <div class="project-tags">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="publication">
+                    <div class="project-image">
+                        <img src="gambar/Gen_City2025.png" alt="IHealt Logo">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Publication</span>
+                        <h3>Gen-City 2025</h3>
+                        <p>Demographic Variability in Longitudinal EEG Biomarkers: A Study on Age and Gender Differences Using TUEP</p>
+                        <div class="project-tags">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="publication">
+                    <div class="project-image">
+                        <img src="gambar/ICERA2025.png" alt="IHealt Logo">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Publication</span>
+                        <h3>ICERA 2025</h3>
+                        <p>Enchancing Epileptic Seizure Classification Using Entropy Measures on EEG Signals</p>
+                        <div class="project-tags">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="publication">
+                    <div class="project-image">
+                        <img src="gambar/ICCETEI2025.png" alt="IHealt Logo">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Publication</span>
+                        <h3>ICCTEIE 2025</h3>
+                        <p>Comparison of Machine Learning Algorithms Classification Soybean Leaf Diseases</p>
+                        <div class="project-tags">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="publication">
+                    <div class="project-image">
+                        <img src="gambar/1.png" alt="IHealt Logo">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Publication</span>
+                        <h3>Accepted | ISIBER 2026</h3>
+                        <p>Identification of Stable EEG Channel Subsets for Longitudinal Epilepsy Monitoring Using the TUEP Dataset</p>
+                        <div class="project-tags">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="publication">
+                    <div class="project-image">
+                        <img src="gambar/2.png" alt="IHealt Logo">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Publication</span>
+                        <h3>Accepted | ISIBER 2026</h3>
+                        <p>Selective-Channel Epileptic Pattern Classification Using Random Forest on the TUEP Dataset</p>
+                        <div class="project-tags">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="publication">
+                    <div class="project-image">
+                        <img src="gambar/sertifikat/HKI.png" alt="IHealt Logo">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Publication</span>
+                        <h3>Hak Cipta</h3>
+                        <p>HKI dari website StandBy | Tugas Akhir</p>
+                        <div class="project-tags">
+                        </div>
+                    </div>
+                </div>
+                <!-- IoT/AI/ML/DL -->
+                <div class="project-card" data-category="iot">
+                    <a href="https://github.com/FakhriadiRasyaad?tab=repositories" target="_blank">
+                        <div class="project-image">
+                            <img src="gambar/github.png" alt="JuaraKU App">
+                            <div class="project-overlay">
+                                <span class="view-project">View Prototype</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">GitHub</span>
+                            <h3>GitHub</h3>
+                            <p>Lihat lebih detail di GitHub</p>
+                            <div class="project-tags">
+                                <span class="tag">GitHub</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                 <!-- Game -->
+                 <div class="project-card" data-category="game">
+                    <a href="https://www.roblox.com/games/99839353747608/Gunung-CokSu" target="_blank">
+                        <div class="project-image">
+                            <img src="gambar/icon.png" alt="JuaraKU App">
+                            <div class="project-overlay">
+                                <span class="view-project">View Prototype</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Game</span>
+                            <h3>Gunung CokSu - Roblox</h3>
+                            <p>Game roblox yang bertema pendakian</p>
+                            <div class="project-tags">
+                                <span class="tag">Roblox Studio</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text">
+                © 2026 Fakhriadi Rasyaad. All rights reserved.
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="Project.html">Projects</a>
+                <a href="Sertifikat.html">Certificates</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
